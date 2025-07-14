@@ -23,7 +23,7 @@ const Categories = ({ home }: categoriesProps) => {
 
   const images = [
     {
-      src: "https://ik.imagekit.io/xcyd6uv91/image(1).png",
+      src: "https://ik.imagekit.io/evhp4armq/image(1).webp?updatedAt=1752532440923",
       alt: "bike1",
       category: "Motorcycles",
       label: t("motorcycles"),
