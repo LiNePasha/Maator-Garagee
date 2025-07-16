@@ -245,13 +245,13 @@ const Details = ({ params }: { params: { slug: string } }) => {
         <div className="max-w-6xl mx-auto text-white">
           <div className="mb-2 lg:mb-12 text-center">
             <h5 className="bg-[#B91C1C] text-2xl font-bold rounded-md text-white inline-block">
-              {t('scooterDetails')}
+              {t("scooterDetails")}
             </h5>
           </div>
-          <div className="relative">
-            {/* Center vertical line */}
-            <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 h-full w-[4px] bg-[#B91C1C]"></div>
 
+          <div className="relative !mt-[16px]">
+            {/* Center vertical line */}
+            <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 h-1/2 w-[4px] bg-[#B91C1C]"></div>
             <div className="flex flex-col sm:flex-row items-center mb-4 relative">
               {/* Text on the right */}
               <div className="sm:w-1/2 text-center text-black dark:text-white sm:pl-10">
@@ -273,10 +273,15 @@ const Details = ({ params }: { params: { slug: string } }) => {
                   alt="ddd"
                   width={300}
                   height={700}
-                  className="rounded-md h-[325px] object-cover !m-0"
+                  className="rounded-md h-[325px] object-cover !m-0 !mb-[16px]"
                 />
               </div>
             </div>
+          </div>
+
+          <div className="relative">
+            {/* Center vertical line */}
+            <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 h-full w-[4px] bg-[#B91C1C]"></div>
 
             <div className="flex flex-col sm:flex-row items-center mb-4 relative">
               {/* Text on the right */}
@@ -329,8 +334,6 @@ const Details = ({ params }: { params: { slug: string } }) => {
                 />
               </div>
             </div>
-
-            
           </div>
 
           <div className="relative !mt-[16px]">
@@ -357,7 +360,7 @@ const Details = ({ params }: { params: { slug: string } }) => {
                   alt="ddd"
                   width={300}
                   height={700}
-                  className="rounded-md h-[325px] object-cover !m-0"
+                  className="rounded-md h-[325px] object-cover !m-0 !mt-[16px]"
                 />
               </div>
             </div>
