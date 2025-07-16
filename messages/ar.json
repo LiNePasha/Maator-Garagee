@@ -14,7 +14,8 @@
     "learnMore": "أعرف اكتر",
     "ourLocation": "36 شارع مكة، زهراء المعادي – جنب مسجد آل إبراهيم",
     "ar": "عربي",
-    "en": "انجليزي"
+    "en": "انجليزي",
+    "go": "تسوق الأكسسوارات"
   },
   "Hero": {
     "onlineStore": "المتجر الإلكتروني",
@@ -28,7 +29,9 @@
     "parts": "قطع الغيار",
     "accessories": "إكسسوارات",
     "onePlace": "كل ما تحتاجه في مكان واحد",
-    "showMore": "المزيد"
+    "showMore": "المزيد",
+    "motorcycles": "موتوسيكات",
+    "scooters":"اسكوترات"
   },
   "Videos": {
     "title1": "شوف المناسب ليك",
@@ -81,7 +84,7 @@
     "motorcycle_not_found": "لم يتم العثور على الدراجة النارية.",
     "galleryTitle": "المعرض",
     "deliverablesTitle": "عملاؤنا السعداء",
-    "showDetails": "شوف التفاصيل",
+    "showDetails": "تفاصيل",
     "videos": "فديوهات العرض"
   },
   "posts": {
