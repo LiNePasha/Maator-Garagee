@@ -138,6 +138,12 @@ const NavBar = ({ className, id }: NavProps) => {
         )}
         id={id}
       >
+        <div className="text-center bg-[#B91C1C] text-xl py-1">
+          <a href="https://store.maator.com/">
+            {"<<"} {t("go")}
+          </a>
+        </div>
+
         {/* Desktop Menu */}
         <div className="hidden md:flex justify-between items-center px-6 md:px-20">
           <div className="flex items-center">
