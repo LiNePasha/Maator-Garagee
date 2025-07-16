@@ -4,6 +4,7 @@
     "categories": "Categories",
     "motorcycles": "Motorcycles",
     "scooters": "Scooters",
+    "scootersElectric": "Electric Scooters",
     "accessories": "Accessories",
     "videos": "Videos",
     "shooting": "Shooting",
@@ -36,7 +37,8 @@
     "showMore": "Show More",
     "motorcycles": "motorcycles",
     "scooters":"scooters",
-    "shooting": "images"
+    "shooting": "images",
+    "scootersElectric": "Electric Scooters"
   },
   "Contact": {
     "title": "Get in",
