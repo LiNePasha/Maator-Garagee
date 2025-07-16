@@ -247,9 +247,9 @@ const Details = ({ params }: { params: { slug: string } }) => {
       <section className="bg-transparent py-12 px-4 sm:px-6 lg:px-20">
         <div className="max-w-6xl mx-auto text-white">
           <div className="mb-2 lg:mb-12 text-center">
-            <span className="bg-[#B91C1C] text-2xl font-bold rounded-md text-white">
-              مواصفات الموتوسيكل
-            </span>
+            <h5 className="bg-[#B91C1C] text-2xl font-bold rounded-md text-white inline-block">
+              {t('motoDetails')}
+            </h5>
           </div>
           <div className="relative">
             {/* Center vertical line */}
@@ -267,7 +267,7 @@ const Details = ({ params }: { params: { slug: string } }) => {
               </div>
 
               {/* Timeline Dot */}
-              <div className="hidden lg:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#B91C1C] rounded-full z-10" />
+              <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#B91C1C] rounded-full z-10" />
 
               {/* image on the left */}
               <div className="sm:w-1/3 flex justify-end sm:pr-10">
@@ -293,7 +293,7 @@ const Details = ({ params }: { params: { slug: string } }) => {
               </div>
 
               {/* Timeline Dot */}
-              <div className="hidden lg:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#B91C1C] rounded-full z-10" />
+              <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#B91C1C] rounded-full z-10" />
 
               {/* image on the left */}
               <div className="sm:w-1/3 flex justify-end sm:pr-10">
@@ -319,7 +319,7 @@ const Details = ({ params }: { params: { slug: string } }) => {
               </div>
 
               {/* Timeline Dot */}
-              <div className="hidden lg:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#B91C1C] rounded-full z-10" />
+              <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#B91C1C] rounded-full z-10" />
 
               {/* image on the left */}
               <div className="sm:w-1/3 flex justify-end sm:pr-10">
@@ -345,7 +345,7 @@ const Details = ({ params }: { params: { slug: string } }) => {
               </div>
 
               {/* Timeline Dot */}
-              <div className="hidden lg:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#B91C1C] rounded-full z-10" />
+              <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#B91C1C] rounded-full z-10" />
 
               {/* image on the left */}
               <div className="sm:w-1/3 flex justify-end sm:pr-10">
