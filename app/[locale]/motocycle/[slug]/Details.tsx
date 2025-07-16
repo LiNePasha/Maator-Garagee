@@ -249,9 +249,9 @@ const Details = ({ params }: { params: { slug: string } }) => {
               {t("motoDetails")}
             </h5>
           </div>
-          <div className="relative">
-            {/* Center vertical line */}
-            <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 h-full w-[4px] bg-[#B91C1C]"></div>
+
+          <div className="relative mb-[-16px]">
+            <div className="hidden lg:block absolute left-1/2 !bottom-0 transform -translate-x-1/2 h-1/2 w-[4px] bg-[#B91C1C]"></div>
 
             <div className="flex flex-col sm:flex-row items-center mb-4 relative">
               {/* Text on the right */}
@@ -274,10 +274,15 @@ const Details = ({ params }: { params: { slug: string } }) => {
                   alt="ddd"
                   width={300}
                   height={700}
-                  className="rounded-md h-[325px] object-cover !m-0"
+                  className="rounded-md h-[325px] object-cover !m-0 !mb-[16px]"
                 />
               </div>
             </div>
+          </div>
+
+          <div className="relative">
+            {/* Center vertical line */}
+            <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 h-full w-[4px] bg-[#B91C1C]"></div>
 
             <div className="flex flex-col sm:flex-row items-center mb-4 relative">
               {/* Text on the right */}
