@@ -30,7 +30,7 @@
     "accessories": "إكسسوارات",
     "onePlace": "كل ما تحتاجه في مكان واحد",
     "showMore": "المزيد",
-    "motorcycles": "موتوسيكات",
+    "motorcycles": "موتوسيكلات",
     "scooters":"اسكوترات"
   },
   "Videos": {
@@ -85,7 +85,9 @@
     "galleryTitle": "المعرض",
     "deliverablesTitle": "عملاؤنا السعداء",
     "showDetails": "تفاصيل",
-    "videos": "فديوهات العرض"
+    "videos": "فديوهات العرض",
+    "motoDetails": "مواصفات المووسيكل",
+    "scooterDetails": "مواصفات الأسكوتر"
   },
   "posts": {
     "allTags": "كل الوسوم",
