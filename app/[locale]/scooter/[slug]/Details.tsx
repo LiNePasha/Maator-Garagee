@@ -86,11 +86,12 @@ const Details = ({ params }: { params: { slug: string } }) => {
     setFields(initialFields(t));
   }, [t]);
 
-  const galleryImages =
-    motorcycle?.gallery?.map((img: any) => ({
-      url: img.url,
-      alt: img.alt || img.title,
-    })) || [];
+  const galleryImages = motorcycle?.gallery
+    ? motorcycle?.gallery?.map((img: any) => ({
+        url: img.url,
+        alt: img.alt || img.title,
+      }))
+    : [];
 
   const deliverableImages = motorcycle?.deliverables
     ? motorcycle?.deliverables.map((img: any) => ({
@@ -251,8 +252,8 @@ const Details = ({ params }: { params: { slug: string } }) => {
 
           <div className="relative !mt-[16px]">
             {/* Center vertical line */}
-            <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 h-1/2 w-[4px] bg-[#B91C1C]"></div>
-            <div className="flex flex-col sm:flex-row items-center mb-4 relative">
+            <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 h-full w-[4px] bg-[#B91C1C]"></div>
+            <div className="flex flex-col sm:flex-row items-center relative">
               {/* Text on the right */}
               <div className="sm:w-1/2 text-center text-black dark:text-white sm:pl-10">
                 <div
@@ -336,9 +337,9 @@ const Details = ({ params }: { params: { slug: string } }) => {
             </div>
           </div>
 
-          <div className="relative !mt-[16px]">
+          <div className="relative !mt-[-16px]">
             {/* Center vertical line */}
-            <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 h-1/2 w-[4px] bg-[#B91C1C]"></div>
+            <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 h-full w-[4px] bg-[#B91C1C]"></div>
             <div className="flex flex-col sm:flex-row items-center mb-4 relative">
               {/* Text on the right */}
               <div className="sm:w-1/2 text-center text-black dark:text-white sm:pl-10">
@@ -351,7 +352,7 @@ const Details = ({ params }: { params: { slug: string } }) => {
               </div>
 
               {/* Timeline Dot */}
-              <div className="hidden lg:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#B91C1C] rounded-full z-10" />
+              <div className="hidden lg:block absolute bottom-0 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#B91C1C] rounded-full z-10" />
 
               {/* image on the left */}
               <div className="sm:w-1/3 flex justify-end sm:pr-10">
