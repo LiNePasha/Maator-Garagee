@@ -38,6 +38,9 @@ const NavBar = ({ className, id }: NavProps) => {
     {
       label: "Scooters",
     },
+     {
+      label: "Scooters Electric",
+    },
   ]);
   const pathname = usePathname();
 
@@ -79,6 +82,8 @@ const NavBar = ({ className, id }: NavProps) => {
             ? "motorcycles"
             : category.label === "Scooters"
             ? "scooters"
+            : category.label === "Scooters Electric"
+            ? "scootersElectric"
             : category.label === "Accessories"
             ? "accessories"
             : "home"
@@ -88,6 +93,8 @@ const NavBar = ({ className, id }: NavProps) => {
             ? withLocale("/motorcycles")
             : category.label === "Scooters"
             ? withLocale("/scooters")
+            : category.label === "Scooters Electric"
+            ? withLocale("/scootersElectric")
             : category.label === "Accessories"
             ? withLocale("/accessories")
             : withLocale("/"),
@@ -109,6 +116,7 @@ const NavBar = ({ className, id }: NavProps) => {
     "/shooting",
     "/motorcycles",
     "/scooters",
+    "/scootersElectric",
     "/accessories",
     "/driveschool",
     "/posts",
