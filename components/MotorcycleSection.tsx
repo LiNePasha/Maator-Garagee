@@ -81,15 +81,15 @@ const MotorcyclesSection = () => {
 
   return (
     <section style={{ backgroundColor, color: textColor }}>
-      <div>
+      {/* <div>
         <ImageCard
           imgSrc={
             theme === "light" ? "/motorsectionlight.png" : "/motorsection.png"
           }
         />
-      </div>
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      </div> */}
+      <div className="container mx-auto mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {loading
             ? Array(itemsPerPage)
                 .fill(0)
@@ -97,9 +97,8 @@ const MotorcyclesSection = () => {
                   <div
                     key={index}
                     className="border rounded-lg overflow-hidden bg-[#F1F2F4] animate-pulse"
-                    style={{ boxShadow: cardShadow }}
                   >
-                    <div className="relative w-[calc(100%-2rem)] mx-auto h-[30vh] px-4 bg-gray-300"></div>
+                    <div className="relative w-full mx-auto h-[30vh] px-4 bg-gray-300"></div>
                     <div className="p-4 flex flex-col justify-between h-[120px]">
                       <div className="bg-gray-300 h-4 w-3/4 mb-2"></div>
                       <div className="bg-gray-300 h-4 w-1/2 mb-4"></div>
@@ -110,23 +109,23 @@ const MotorcyclesSection = () => {
             : displayedMotorcycles.map((bike) => (
                 <div
                   key={bike.id}
-                  className="border rounded-lg overflow-hidden bg-[#F1F2F4]"
-                  style={{ boxShadow: cardShadow }}
+                  className="overflow-hidden"
                 >
-                  <div className="relative w-[calc(100%-2rem)] rounded-lg mx-auto h-[55vh] px-4">
+                  <div className="relative w-full mx-auto h-[55vh] px-4">
                     <Image
                       src={bike.src}
                       alt={bike.title}
                       layout="fill"
                       objectFit="cover"
+                      className="rounded-xl"
                     />
                   </div>
 
-                  <div className="p-4">
-                    <h3 className="text-md font-semibold text-black">
+                  <div className="p-2 text-center ">
+                    <h3 className="text-3xl !font-bold !mt-[1.3em] !mb-1 dark:text-white">
                       {bike.title}
                     </h3>
-                    <p className="text-red-500 text-sm font-bold">
+                    <p className="text-primary text-lg font-bold">
                       {bike.price}
                     </p>
                     <button
