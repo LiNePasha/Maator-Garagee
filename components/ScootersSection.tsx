@@ -83,14 +83,14 @@ const ScootersSection = () => {
 
   return (
     <section style={{ backgroundColor, color: textColor }} className="py-10">
-      <div>
+      {/* <div>
         <ImageCard
           imgSrc={
             theme === "light" ? "/motorsectionlight.png" : "/motorsection.png"
           }
         />
-      </div>
-      <div className="container mx-auto">
+      </div> */}
+      <div className="container mx-auto mt-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {loading
             ? Array(itemsPerPage)
@@ -99,7 +99,6 @@ const ScootersSection = () => {
                   <div
                     key={index}
                     className="border rounded-lg overflow-hidden bg-[#F1F2F4] animate-pulse"
-                    style={{ boxShadow: cardShadow }}
                   >
                     <div className="relative w-[calc(100%-2rem)] mx-auto h-[30vh] px-4 bg-gray-300"></div>
                     <div className="p-4 flex flex-col justify-between h-[120px]">
@@ -112,23 +111,23 @@ const ScootersSection = () => {
             : displayedScooters.map((scooter) => (
                 <div
                   key={scooter.id}
-                  className="border rounded-lg overflow-hidden bg-[#F1F2F4]"
-                  style={{ boxShadow: cardShadow }}
+                  className="overflow-hidden"
                 >
-                  <div className="relative w-[calc(100%-2rem)] rounded-lg mx-auto h-[55vh] px-4">
+                  <div className="relative w-full rounded-lg mx-auto h-[55vh] px-4">
                     <Image
                       src={scooter.src}
                       alt={scooter.title}
                       layout="fill"
                       objectFit="cover"
+                      className="rounded-xl"
                     />
                   </div>
 
-                  <div className="p-4">
-                    <h3 className="text-md font-semibold text-black">
+                  <div className="p-2 text-center">
+                    <h3 className="text-3xl !font-bold !mt-[1.3em] !mb-1 dark:text-white">
                       {scooter.title}
                     </h3>
-                    <p className="text-red-500 text-sm font-bold">
+                    <p className="text-primary text-lg font-bold">
                       {scooter.price}
                     </p>
                     <button
