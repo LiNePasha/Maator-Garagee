@@ -85,7 +85,9 @@
     "galleryTitle": "Gallery",
     "deliverablesTitle": "Happy Customers",
     "showDetails": "Show Details",
-    "videos": "Review Videos"
+    "videos": "Review Videos",
+    "motoDetails": "Motorcycle Details",
+    "scooterDetails": "Scooter Details"
   },
   "posts": {
     "allTags": "All Tags",
