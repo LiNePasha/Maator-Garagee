@@ -135,7 +135,7 @@ const NavBar = ({ className, id }: NavProps) => {
       <nav
         className={cn(
           "absolute z-50 top-0 w-full  text-white",
-          `${pathname.includes("posts") || pathname.includes("contact") ? 'bg-black' : 'bg-transparent'}`,
+          `${pathname.includes("posts") || pathname.includes("contact") || pathname.includes("motocycle") || pathname.includes("scooter") ? 'bg-black' : 'bg-transparent'}`,
           className
         )}
         id={id}
