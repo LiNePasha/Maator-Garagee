@@ -70,7 +70,7 @@ interface MotorcycleDetails {
   next_props: any;
   framel_image: any;
   framel_props: any;
-  motor_image:any;
+  motor_image: any;
 }
 
 const Details = ({ params }: { params: { slug: string } }) => {
@@ -228,138 +228,136 @@ const Details = ({ params }: { params: { slug: string } }) => {
   }
 
   return (
-    <div
-    className="relative min-h-screen flex flex-col justify-between bg-[#1B1919]"
-    >
-            <section className="relative min-h-[10rem] md:h-screen w-full px-6">
-              {/* Background Image */}
-              <Image
-                src={motorcycle.background}
-                alt="Zontes V350 2023"
-                layout="fill"
-                objectFit="contain"
-                quality={100}
-                className="pt-0 lg:pt-24 object-contain"
-              />
-            </section>
-      
-            <section className="bg-transparent py-12 px-4 sm:px-6 lg:px-20">
-              <div className="max-w-6xl mx-auto text-white">
-                <div className="mb-2 lg:mb-12 text-center">
-                  <span className="bg-[#B91C1C] text-2xl font-bold rounded-md text-white">
-                    مواصفات الاسكوتر
-                  </span>
-                </div>
-                <div className="relative">
-                  {/* Center vertical line */}
-                  <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 h-full w-[2px] bg-[#B91C1C]"></div>
-      
-                  <div className="flex flex-col sm:flex-row items-center mb-4 relative">
-                    {/* Text on the right */}
-                    <div className="sm:w-1/2 text-center sm:pl-10">
-                      <div
-                        className="[&>ul]:list-none [&>ul>li]:before:content-['-'] [&>ul>li]:before:ml-1 [&>ul]:p-0 [&>ul>li]:m-0 [&>ul>li]:!font-bold"
-                        dangerouslySetInnerHTML={{
-                          __html: motorcycle.displacement,
-                        }}
-                      />
-                    </div>
-      
-                    {/* Timeline Dot */}
-                    <div className="hidden lg:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#B91C1C] rounded-full z-10" />
-      
-                    {/* image on the left */}
-                    <div className="sm:w-1/3 flex justify-end sm:pr-10">
-                      <Image
-                        src={motorcycle.motor_image}
-                        alt="ddd"
-                        width={300}
-                        height={700}
-                        className="rounded-md h-[325px] object-cover !m-0"
-                      />
-                    </div>
-                  </div>
-      
-                  <div className="flex flex-col sm:flex-row items-center mb-4 relative">
-                    {/* Text on the right */}
-                    <div className="sm:w-1/2 text-center sm:pl-10">
-                      <div
-                        className="[&>ul]:list-none [&>ul>li]:before:content-['-'] [&>ul>li]:before:ml-1 [&>ul]:p-0 [&>ul>li]:m-0 [&>ul>li]:!font-bold"
-                        dangerouslySetInnerHTML={{
-                          __html: motorcycle.back_props,
-                        }}
-                      />
-                    </div>
-      
-                    {/* Timeline Dot */}
-                    <div className="hidden lg:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#B91C1C] rounded-full z-10" />
-      
-                    {/* image on the left */}
-                    <div className="sm:w-1/3 flex justify-end sm:pr-10">
-                      <Image
-                        src={motorcycle.back_image}
-                        alt="ddd"
-                        width={300}
-                        height={700}
-                        className="rounded-md h-[325px] object-cover !m-0"
-                      />
-                    </div>
-                  </div>
-      
-                  <div className="flex flex-col sm:flex-row items-center mb-4 relative">
-                    {/* Text on the right */}
-                    <div className="sm:w-1/2 text-center sm:pl-10">
-                      <div
-                        className="[&>ul]:list-none [&>ul>li]:before:content-['-'] [&>ul>li]:before:ml-1 [&>ul]:p-0 [&>ul>li]:m-0 [&>ul>li]:!font-bold"
-                        dangerouslySetInnerHTML={{
-                          __html: motorcycle.next_props,
-                        }}
-                      />
-                    </div>
-      
-                    {/* Timeline Dot */}
-                    <div className="hidden lg:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#B91C1C] rounded-full z-10" />
-      
-                    {/* image on the left */}
-                    <div className="sm:w-1/3 flex justify-end sm:pr-10">
-                      <Image
-                        src={motorcycle.next_image}
-                        alt="ddd"
-                        width={300}
-                        height={700}
-                        className="rounded-md h-[325px] object-cover !m-0"
-                      />
-                    </div>
-                  </div>
-      
-                  <div className="flex flex-col sm:flex-row items-center mb-4 relative">
-                    {/* Text on the right */}
-                    <div className="sm:w-1/2 text-center sm:pl-10">
-                      <div
-                        className="[&>ul]:list-none [&>ul>li]:before:content-['-'] [&>ul>li]:before:ml-1 [&>ul]:p-0 [&>ul>li]:m-0 [&>ul>li]:!font-bold"
-                        dangerouslySetInnerHTML={{
-                          __html: motorcycle.framel_props,
-                        }}
-                      />
-                    </div>
-      
-                    {/* Timeline Dot */}
-                    <div className="hidden lg:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#B91C1C] rounded-full z-10" />
-      
-                    {/* image on the left */}
-                    <div className="sm:w-1/3 flex justify-end sm:pr-10">
-                      <Image
-                        src={motorcycle.framel_image}
-                        alt="ddd"
-                        width={300}
-                        height={700}
-                        className="rounded-md h-[325px] object-cover !m-0"
-                      />
-                    </div>
-                  </div>
-                </div>
+    <div className="relative min-h-screen flex flex-col justify-between bg-[#1B1919]">
+      <section className="relative min-h-[10rem] md:h-screen w-full px-6">
+        {/* Background Image */}
+        <Image
+          src={motorcycle.background}
+          alt="Zontes V350 2023"
+          layout="fill"
+          objectFit="contain"
+          quality={100}
+          className="pt-0 lg:pt-24 object-contain"
+        />
+      </section>
+
+      <section className="bg-transparent py-12 px-4 sm:px-6 lg:px-20">
+        <div className="max-w-6xl mx-auto text-white">
+          <div className="mb-2 lg:mb-12 text-center">
+            <h5 className="bg-[#B91C1C] text-2xl font-bold rounded-md text-white inline-block">
+              {t('scooterDetails')}
+            </h5>
+          </div>
+          <div className="relative">
+            {/* Center vertical line */}
+            <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 h-full w-[2px] bg-[#B91C1C]"></div>
+
+            <div className="flex flex-col sm:flex-row items-center mb-4 relative">
+              {/* Text on the right */}
+              <div className="sm:w-1/2 text-center sm:pl-10">
+                <div
+                  className="[&>ul]:list-none [&>ul>li]:before:content-['-'] [&>ul>li]:before:ml-1 [&>ul]:p-0 [&>ul>li]:m-0 [&>ul>li]:!font-bold"
+                  dangerouslySetInnerHTML={{
+                    __html: motorcycle.displacement,
+                  }}
+                />
               </div>
-            </section>
+
+              {/* Timeline Dot */}
+              <div className="hidden lg:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#B91C1C] rounded-full z-10" />
+
+              {/* image on the left */}
+              <div className="sm:w-1/3 flex justify-end sm:pr-10">
+                <Image
+                  src={motorcycle.motor_image}
+                  alt="ddd"
+                  width={300}
+                  height={700}
+                  className="rounded-md h-[325px] object-cover !m-0"
+                />
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row items-center mb-4 relative">
+              {/* Text on the right */}
+              <div className="sm:w-1/2 text-center sm:pl-10">
+                <div
+                  className="[&>ul]:list-none [&>ul>li]:before:content-['-'] [&>ul>li]:before:ml-1 [&>ul]:p-0 [&>ul>li]:m-0 [&>ul>li]:!font-bold"
+                  dangerouslySetInnerHTML={{
+                    __html: motorcycle.back_props,
+                  }}
+                />
+              </div>
+
+              {/* Timeline Dot */}
+              <div className="hidden lg:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#B91C1C] rounded-full z-10" />
+
+              {/* image on the left */}
+              <div className="sm:w-1/3 flex justify-end sm:pr-10">
+                <Image
+                  src={motorcycle.back_image}
+                  alt="ddd"
+                  width={300}
+                  height={700}
+                  className="rounded-md h-[325px] object-cover !m-0"
+                />
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row items-center mb-4 relative">
+              {/* Text on the right */}
+              <div className="sm:w-1/2 text-center sm:pl-10">
+                <div
+                  className="[&>ul]:list-none [&>ul>li]:before:content-['-'] [&>ul>li]:before:ml-1 [&>ul]:p-0 [&>ul>li]:m-0 [&>ul>li]:!font-bold"
+                  dangerouslySetInnerHTML={{
+                    __html: motorcycle.next_props,
+                  }}
+                />
+              </div>
+
+              {/* Timeline Dot */}
+              <div className="hidden lg:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#B91C1C] rounded-full z-10" />
+
+              {/* image on the left */}
+              <div className="sm:w-1/3 flex justify-end sm:pr-10">
+                <Image
+                  src={motorcycle.next_image}
+                  alt="ddd"
+                  width={300}
+                  height={700}
+                  className="rounded-md h-[325px] object-cover !m-0"
+                />
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row items-center mb-4 relative">
+              {/* Text on the right */}
+              <div className="sm:w-1/2 text-center sm:pl-10">
+                <div
+                  className="[&>ul]:list-none [&>ul>li]:before:content-['-'] [&>ul>li]:before:ml-1 [&>ul]:p-0 [&>ul>li]:m-0 [&>ul>li]:!font-bold"
+                  dangerouslySetInnerHTML={{
+                    __html: motorcycle.framel_props,
+                  }}
+                />
+              </div>
+
+              {/* Timeline Dot */}
+              <div className="hidden lg:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#B91C1C] rounded-full z-10" />
+
+              {/* image on the left */}
+              <div className="sm:w-1/3 flex justify-end sm:pr-10">
+                <Image
+                  src={motorcycle.framel_image}
+                  alt="ddd"
+                  width={300}
+                  height={700}
+                  className="rounded-md h-[325px] object-cover !m-0"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* <div className="w-full flex flex-col items-center px-6 pt-16 lg:pt-28 z-20">
         <div className="w-full text-center mb-6">
           <h2 className="text-4xl font-extrabold text-white drop-shadow-lg !mt-1 !mb-1">
