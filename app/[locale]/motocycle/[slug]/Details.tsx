@@ -230,14 +230,9 @@ const Details = ({ params }: { params: { slug: string } }) => {
 
   return (
     <div
-      className="relative min-h-screen flex flex-col justify-between"
-      style={{
-        backgroundImage: "url('/itembg.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      className="relative min-h-screen flex flex-col justify-between bg-[#1B1919]"
     >
-      <section className="relative min-h-[260px] md:h-screen w-full px-6">
+      <section className="relative min-h-[10rem] md:h-screen w-full px-6">
         {/* Background Image */}
         <Image
           src={motorcycle.background}
@@ -250,7 +245,7 @@ const Details = ({ params }: { params: { slug: string } }) => {
       </section>
 
       <section className="bg-transparent py-12 px-4 sm:px-6 lg:px-20">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto text-white">
           <div className="mb-2 lg:mb-12 text-center">
             <span className="bg-[#B91C1C] text-2xl font-bold rounded-md text-white">
               مواصفات الموتوسيكل
