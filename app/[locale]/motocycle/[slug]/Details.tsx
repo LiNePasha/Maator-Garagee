@@ -230,7 +230,7 @@ const Details = ({ params }: { params: { slug: string } }) => {
 
   return (
     <div
-      className="relative min-h-screen flex flex-col justify-between bg-[#1B1919]"
+      className="relative min-h-screen flex flex-col justify-between dark:bg-[#1B1919]"
     >
       <section className="relative min-h-[10rem] md:h-screen w-full px-6">
         {/* Background Image */}
@@ -257,7 +257,7 @@ const Details = ({ params }: { params: { slug: string } }) => {
 
             <div className="flex flex-col sm:flex-row items-center mb-4 relative">
               {/* Text on the right */}
-              <div className="sm:w-1/2 text-center sm:pl-10">
+              <div className="sm:w-1/2 text-center text-black dark:text-white sm:pl-10">
                 <div
                   className="[&>ul]:list-none [&>ul>li]:before:content-['-'] [&>ul>li]:before:ml-1 [&>ul]:p-0 [&>ul>li]:m-0 [&>ul>li]:!font-bold"
                   dangerouslySetInnerHTML={{
@@ -283,7 +283,7 @@ const Details = ({ params }: { params: { slug: string } }) => {
 
             <div className="flex flex-col sm:flex-row items-center mb-4 relative">
               {/* Text on the right */}
-              <div className="sm:w-1/2 text-center sm:pl-10">
+              <div className="sm:w-1/2 text-center text-black dark:text-white sm:pl-10">
                 <div
                   className="[&>ul]:list-none [&>ul>li]:before:content-['-'] [&>ul>li]:before:ml-1 [&>ul]:p-0 [&>ul>li]:m-0 [&>ul>li]:!font-bold"
                   dangerouslySetInnerHTML={{
@@ -309,7 +309,7 @@ const Details = ({ params }: { params: { slug: string } }) => {
 
             <div className="flex flex-col sm:flex-row items-center mb-4 relative">
               {/* Text on the right */}
-              <div className="sm:w-1/2 text-center sm:pl-10">
+              <div className="sm:w-1/2 text-center text-black dark:text-white sm:pl-10">
                 <div
                   className="[&>ul]:list-none [&>ul>li]:before:content-['-'] [&>ul>li]:before:ml-1 [&>ul]:p-0 [&>ul>li]:m-0 [&>ul>li]:!font-bold"
                   dangerouslySetInnerHTML={{
@@ -335,7 +335,7 @@ const Details = ({ params }: { params: { slug: string } }) => {
 
             <div className="flex flex-col sm:flex-row items-center mb-4 relative">
               {/* Text on the right */}
-              <div className="sm:w-1/2 text-center sm:pl-10">
+              <div className="sm:w-1/2 text-center text-black dark:text-white sm:pl-10">
                 <div
                   className="[&>ul]:list-none [&>ul>li]:before:content-['-'] [&>ul>li]:before:ml-1 [&>ul]:p-0 [&>ul>li]:m-0 [&>ul>li]:!font-bold"
                   dangerouslySetInnerHTML={{
