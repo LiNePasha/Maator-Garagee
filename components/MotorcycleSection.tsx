@@ -62,8 +62,8 @@ const MotorcyclesSection = () => {
     fetchMotorcycles();
   }, []);
   const t = useTranslations("motor")
-  const backgroundColor = theme === "light" ? "#FFFFFF" : "#0E0B0B";
-  const textColor = theme === "light" ? "#000000" : "#FFFFFF";
+  const backgroundColor = theme === "dark" ? "#0E0B0B" : "#FFFFFF";
+  const textColor = theme === "dark" ? "#FFFFFF" : "#000000";
   const cardShadow = theme === "light" ? "0px 4px 10px #DD253D40" : "none";
 
   const totalPages = Math.ceil(motorcycles.length / itemsPerPage);
