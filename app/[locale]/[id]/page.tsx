@@ -164,12 +164,7 @@ const AccessoryDetails = ({ params }: { params: { id: string } }) => {
 
   return (
     <div
-      className="relative min-h-screen flex flex-col justify-between"
-      style={{
-        backgroundImage: "url('/itembg.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      className="relative min-h-screen flex flex-col justify-between dark:bg-[#1B1919]"
     >
       {/* Content Section */}
       <div className="flex-grow flex flex-col items-center max-w-5xl mx-auto px-6 py-8 bg-transparent z-20">
