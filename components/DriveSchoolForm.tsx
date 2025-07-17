@@ -9,8 +9,8 @@ const SELECT = "SELECT";
 
 const DriveSchoolForm = () => {
   const { theme } = useTheme();
-  const backgroundColor = theme === "light" ? "#FFFFFF" : "#0E0B0B";
-  const textColor = theme === "light" ? "#000000" : "#FFFFFF";
+  const backgroundColor = theme === "dark" ? "#0E0B0B" : "#FFFFFF";
+  const textColor = theme === "dark" ? "#FFFFFF" : "#000000";
 
   const t = useTranslations("DriveSchool");
 
